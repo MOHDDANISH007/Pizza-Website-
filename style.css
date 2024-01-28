@@ -1,0 +1,269 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+html{
+    scroll-behavior:smooth;
+}
+
+/* css varaible */
+
+:root {
+    --navbar-height: 59px;
+}
+
+/* Navigation bar  designing */
+/* #navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+} */
+#navbar {
+    display: flex;
+    align-items: center;
+    font-family: 'Baloo Bhai';
+    position: sticky;
+    top: 0px;
+
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.3 ;
+}
+
+
+
+/* Logo and image desiging */
+
+#logo {
+    margin: 10px 34px;
+}
+
+#logo>img {
+    height: 80px;
+    margin: 3px 5px;
+}
+
+/* Navigation Bar : List styling */
+#navbar ul {
+    display: flex;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.3rem;
+    padding: 4px 4px;
+    color: white;
+}
+
+#navbar ul li a {
+    text-decoration: none;
+    display: block;
+    font-size: 1.3rem;
+    padding: 4px 10px;
+    border-radius: 22px;
+    background-color: white; /* Set default background color */
+    color: black; /* Set default text color */
+    transition: background-color 0.3s, color 0.3s; /* Add transition effect */
+}
+
+#navbar ul li a:hover {
+    background-color: black; /* Change background color on hover */
+    color: white; /* Change text color on hover */
+}
+
+/* Home section */
+
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 30px 200px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before {
+    content: "";
+    background: url(images/background\ 3.jpg) no-repeat center center/cover;
+    width: 100%;
+    height: 585px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.78;
+}
+
+#home h1{
+    color: white;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+}
+/* Services Container */
+#services{
+    margin: 34px;
+    display: flex;
+
+}
+
+#services .box{
+    background-color: #dfe2e5;  
+    border: 2px solid brown;
+    margin: 3px 6px;
+    padding: 34px;
+    border-radius: 23px;
+   
+}
+#services .box img{
+    height: 160px;
+    display: block;
+    margin: auto;
+}
+
+
+#services .box p{
+    font-family: 'Oswald', sans-serif;  
+}
+
+
+/* Clients Section  */
+
+#client-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 89%;
+    opacity: 0.36;
+    z-index: -1;
+    background: url(images/background1.jpg) no-repeat center center/ cover;
+}
+
+
+
+#client-section{
+    position: relative; 
+    height: 344px; 
+}
+
+
+
+
+
+
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clients-item{
+    padding: 36px;
+}
+
+.clients-item img {
+    height: 124px;
+}
+
+/* Contact us  section*/
+
+/* Contact us section */
+
+/* Contact Section */
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url(images/connect.jpg) no-repeat center center/cover;
+
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input, 
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+} 
+
+#contact-box form{
+    width: 40%;
+}
+
+#contact-box label{
+   font-size: 1.3rem;
+   font-family: 'Bree Serif', serif;
+
+}
+
+
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+
+/* Utlity Classes */
+.h-primary{
+    font-size: 3.8rem;
+    padding: 12px 12px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.h-secondary{
+    font-size: 2.8rem;
+    padding: 12px 12px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.btn{
+    border: 2px solid white;
+    border-radius: 8px;
+    padding: 5px 10px;
+    cursor: pointer;
+    background-color: brown;
+    color: white;
+    margin: 12px 24px;
+    font-size: 1.2rem;
+}
+
+.btn:hover{
+    background-color: black;
+}
+
+.center{
+    text-align: center;
+}
